@@ -1,16 +1,17 @@
-import Item from "./Item";
+import Item from './Item'
 
-
-function List(){
-return (
-    <>
-    <h1> Minha lista</h1>
-    <ul>
-        <Item  marca= "Ferrari"/>
-        <Item  marca= "Fiat"/>
-        <Item  marca= "Renault"/>
-    </ul>
-    </>
-)
+function List() {
+  return (
+    <div>
+      <h1>Minha Lista de Marcas:</h1>
+      <ul>
+        <Item marca="Ferrari" ano_lancamento={1985} />
+        <Item marca="Fiat" ano_lancamento={1964} />
+        <Item marca="Honda" />
+        <Item />
+      </ul>
+    </div>
+  )
 }
-export default List;
+
+export default List
